@@ -4,17 +4,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 const Square = () => {
-  return (
-    <div
-      style={{
-        backgroundColor: "gold",
-        margin: 10,
-        padding: 20,
-      }}
-    >
-      Square
-    </div>
-  );
+  return <div className="square">X</div>;
 };
 
 const Board = () => {
@@ -27,20 +17,28 @@ const Board = () => {
       }}
     >
       Board
-      <Square />
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
     </div>
   );
 };
 
 const Game = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "salmon",
-        margin: 10,
-        padding: 20,
-      }}
-    >
+    <div className="game">
       Game
       <Board />
     </div>
