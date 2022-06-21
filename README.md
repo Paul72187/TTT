@@ -10,4 +10,4 @@ The app is built using React.js.
 Clone the repo: git clone https://github.com/Paul72187/TicTacToe.git.
 
 ### Run TicTacToe app locally:
-In the terminal, type npm start and the game should run on the local host.
+In the terminal, type npm start and the game should run on localhost:3000.
